@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روابط أوكرة للمقاولات | UKRA Links</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* إعدادات المتغيرات والألوان */
+        :root {
+            --primary-color: #d4af37; /* لون ذهبي احترافي */
+            --bg-color-1: #1a1a1d;
+            --bg-color-2: #4e4e50;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-muted: #cccccc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(-45deg, var(--bg-color-1), var(--bg-color-2), #000000, #2c3e50);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* حركة الخلفية */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* الحاوية الرئيسية (ستايل الزجاج) */
+        .container {
+            width: 90%;
+            max-width: 450px;
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            margin: 20px 0;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* صورة اللوجو أو الملف الشخصي */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+            padding: 5px;
+            margin-bottom: 15px;
+            background-color: #fff; /* خلفية بيضاء للوجو في حال كان شفافاً */
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 0 5px 0;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin: 0 0 30px 0;
+            font-weight: 400;
+        }
+
+        /* أزرار الروابط */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .link-btn i {
+            position: absolute;
+            right: 20px;
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .link-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+            border-color: var(--primary-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* قسم السوشيال ميديا */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+
+        .social-btn {
+            color: var(--text-main);
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-btn:hover {
+            color: var(--primary-color);
+            transform: scale(1.1);
+        }
+
+        /* الفوتر */
+        .footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: var(--text-muted);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="شعار أوكرة" class="profile-img">
+            <h1 class="title">مؤسسة أوكرة للمقاولات</h1>
+            <p class="subtitle">تجهيزات الفنادق والمشاريع التجارية | المدينة المنورة</p>
+        </header>
+
+        <main class="links-wrapper">
+            
+            <a href="https://ukra.sa" class="link-btn" target="_blank">
+                <i class="fas fa-globe"></i>
+                الموقع الإلكتروني
+            </a>
+
+            <a href="https://wa.me/966XXXXXXXXX" class="link-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                واتساب المبيعات
+            </a>
+
+            <a href="mailto:production@ukra.sa" class="link-btn">
+                <i class="fas fa-envelope"></i>
+                التواصل مع إدارة الإنتاج
+            </a>
+
+            <a href="https://maps.google.com/?q=المدينة+المنورة" class="link-btn" target="_blank">
+                <i class="fas fa-map-marker-alt"></i>
+                موقعنا على الخريطة
+            </a>
+
+            <a href="link-to-your-pdf.pdf" class="link-btn" target="_blank">
+                <i class="fas fa-file-pdf"></i>
+                كتالوج مشاريع الفنادق
+            </a>
+            
+        </main>
+
+        <div class="social-icons">
+            <a href="#" class="social-btn" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" title="تويتر (X)"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" title="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 أوكرة للمقاولات. جميع الحقوق محفوظة.
+        </div>
+    </div>
+
+</body>
+</html>
